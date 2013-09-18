@@ -18,7 +18,10 @@
 		BBA194FE17E90D89002702ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBA194E317E90D89002702ED /* Foundation.framework */; };
 		BBA194FF17E90D89002702ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBA194E717E90D89002702ED /* UIKit.framework */; };
 		BBA1950717E90D89002702ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BBA1950517E90D89002702ED /* InfoPlist.strings */; };
-		BBA1950917E90D89002702ED /* Proof_Of_ConceptTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BBA1950817E90D89002702ED /* Proof_Of_ConceptTests.m */; };
+		BBA1951417E91145002702ED /* OCHamcrestIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBA1951217E91145002702ED /* OCHamcrestIOS.framework */; };
+		BBA1951517E91145002702ED /* OCMockitoIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBA1951317E91145002702ED /* OCMockitoIOS.framework */; };
+		BBA1951B17E91216002702ED /* BRCDetailsController_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = BBA1951A17E91216002702ED /* BRCDetailsController_Tests.m */; };
+		BBA1952017E9158F002702ED /* BRCDetailsController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBA1951F17E9158F002702ED /* BRCDetailsController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +50,12 @@
 		BBA194FC17E90D89002702ED /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		BBA1950417E90D89002702ED /* Proof Of ConceptTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Proof Of ConceptTests-Info.plist"; sourceTree = "<group>"; };
 		BBA1950617E90D89002702ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		BBA1950817E90D89002702ED /* Proof_Of_ConceptTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Proof_Of_ConceptTests.m; sourceTree = "<group>"; };
+		BBA1951217E91145002702ED /* OCHamcrestIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCHamcrestIOS.framework; path = Frameworks/OCHamcrestIOS.framework; sourceTree = "<group>"; };
+		BBA1951317E91145002702ED /* OCMockitoIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCMockitoIOS.framework; path = Frameworks/OCMockitoIOS.framework; sourceTree = "<group>"; };
+		BBA1951A17E91216002702ED /* BRCDetailsController_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRCDetailsController_Tests.m; sourceTree = "<group>"; };
+		BBA1951E17E9158F002702ED /* BRCDetailsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRCDetailsController.h; sourceTree = "<group>"; };
+		BBA1951F17E9158F002702ED /* BRCDetailsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRCDetailsController.m; sourceTree = "<group>"; };
+		BBA1952217E9162D002702ED /* IDetailsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDetailsView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +76,8 @@
 				BBA194FD17E90D89002702ED /* XCTest.framework in Frameworks */,
 				BBA194FF17E90D89002702ED /* UIKit.framework in Frameworks */,
 				BBA194FE17E90D89002702ED /* Foundation.framework in Frameworks */,
+				BBA1951417E91145002702ED /* OCHamcrestIOS.framework in Frameworks */,
+				BBA1951517E91145002702ED /* OCMockitoIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +106,8 @@
 		BBA194E217E90D89002702ED /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BBA1951217E91145002702ED /* OCHamcrestIOS.framework */,
+				BBA1951317E91145002702ED /* OCMockitoIOS.framework */,
 				BBA194E317E90D89002702ED /* Foundation.framework */,
 				BBA194E517E90D89002702ED /* CoreGraphics.framework */,
 				BBA194E717E90D89002702ED /* UIKit.framework */,
@@ -107,6 +119,10 @@
 		BBA194E917E90D89002702ED /* Proof Of Concept */ = {
 			isa = PBXGroup;
 			children = (
+				BBA1951917E911B9002702ED /* Use Cases */,
+				BBA1951817E91198002702ED /* Persistence */,
+				BBA1951717E9118E002702ED /* User Interface */,
+				BBA1951617E9117A002702ED /* Models */,
 				BBA194F217E90D89002702ED /* BRCAppDelegate.h */,
 				BBA194F317E90D89002702ED /* BRCAppDelegate.m */,
 				BBA194F517E90D89002702ED /* Images.xcassets */,
@@ -129,8 +145,8 @@
 		BBA1950217E90D89002702ED /* Proof Of ConceptTests */ = {
 			isa = PBXGroup;
 			children = (
-				BBA1950817E90D89002702ED /* Proof_Of_ConceptTests.m */,
 				BBA1950317E90D89002702ED /* Supporting Files */,
+				BBA1951A17E91216002702ED /* BRCDetailsController_Tests.m */,
 			);
 			path = "Proof Of ConceptTests";
 			sourceTree = "<group>";
@@ -142,6 +158,61 @@
 				BBA1950517E90D89002702ED /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BBA1951617E9117A002702ED /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		BBA1951717E9118E002702ED /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				BBA1951C17E91566002702ED /* Shared */,
+			);
+			name = "User Interface";
+			sourceTree = "<group>";
+		};
+		BBA1951817E91198002702ED /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Persistence;
+			sourceTree = "<group>";
+		};
+		BBA1951917E911B9002702ED /* Use Cases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Use Cases";
+			sourceTree = "<group>";
+		};
+		BBA1951C17E91566002702ED /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				BBA1952117E91612002702ED /* Protocols */,
+				BBA1951D17E9156F002702ED /* Controllers */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
+		BBA1951D17E9156F002702ED /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BBA1951E17E9158F002702ED /* BRCDetailsController.h */,
+				BBA1951F17E9158F002702ED /* BRCDetailsController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		BBA1952117E91612002702ED /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				BBA1952217E9162D002702ED /* IDetailsView.h */,
+			);
+			name = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +311,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBA1952017E9158F002702ED /* BRCDetailsController.m in Sources */,
 				BBA194F417E90D89002702ED /* BRCAppDelegate.m in Sources */,
 				BBA194F017E90D89002702ED /* main.m in Sources */,
 			);
@@ -249,7 +321,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBA1950917E90D89002702ED /* Proof_Of_ConceptTests.m in Sources */,
+				BBA1951B17E91216002702ED /* BRCDetailsController_Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +464,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"/Users/bennie/Documents/projects/iOS-App/Proof\\ Of\\ Concept/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Proof Of Concept/Proof Of Concept-Prefix.pch";
@@ -415,6 +488,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"/Users/bennie/Documents/projects/iOS-App/Proof\\ Of\\ Concept/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Proof Of Concept/Proof Of Concept-Prefix.pch";
